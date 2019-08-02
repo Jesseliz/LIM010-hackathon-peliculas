@@ -8,7 +8,7 @@ const app = {
         .then(response => response.json())
         .then(data => {
           localStorage.setItem('data', JSON.stringify(data))
-           console.log(data);
+          //  console.log(data);
           objPelis.push(data);
           createTemplateCard(objPelis)
           return objPelis;
